@@ -58,3 +58,4 @@ As all of my sampled locations have an anomalous result on the 2nd of June, **I 
 ## Representation
 ### Box Plots
 ![temperature](https://raw.githubusercontent.com/AnonGuy/ClimateCompare/master/images/box_plot/temperature.png)
+![windspeed](https://raw.githubusercontent.com/AnonGuy/ClimateCompare/master/images/box_plot/windspeed.png)

@@ -3,8 +3,6 @@
 import numpy
 import matplotlib.pyplot as plt
 
-fig, ax = plt.subplots()
-
 
 def format_values(towns, index):
     """Take "towns" dictionary and convert to a plottable format."""
@@ -33,6 +31,8 @@ def format_values(towns, index):
 
 def plot(towns):
     """Plot the given "towns" dictionary."""
+    plt.clf()
+    fig, ax = plt.subplots()
     fig.suptitle(
         'Daily mean temperature at three UK towns (2015)',
         fontsize=14, fontweight='bold'
@@ -43,3 +43,15 @@ def plot(towns):
     ax.boxplot(standard)
     ax.set_xticklabels(('Cambourne', 'Heathrow', 'Leuchars'))
     plt.savefig('images/box_plot/temperature.png', dpi=300)
+    plt.clf()
+    fig, ax = plt.subplots()
+    fig.suptitle(
+        'Daily mean windspeed at three UK towns (2015)',
+        fontsize=14, fontweight='bold'
+    )
+    ax.set_ylabel('Daily Mean Windspeed (kn)')
+    ax.set_title('Cambourne, Heathrow and Leuchars')
+    standard, outliers = format_values(towns, 2)
+    ax.boxplot(standard)
+    ax.set_xticklabels(('Cambourne', 'Heathrow', 'Leuchars'))
+    plt.savefig('images/box_plot/windspeed.png', dpi=300)
