@@ -49,11 +49,11 @@ I have written several Python scripts, included in this repository, to calculate
 Using this information, I have discovered the following outliers:
 * Cambourne's wind speed on `02/06/2015`, **18kn**, is 7.25kn higher than the mean. (2σ = 6.78kn)
 * Heathrow's wind speed on `02/06/2015`, **18kn**, is 9.33kn higher than the mean. (2σ = 7.08kn)
-* Leauchars' wind speed on `02/06/2015`, **22kn**, is 11.17kn higher than the mean. (2σ = 10.1kn)
-* Leauchars' temperature on `01/05/2015`, **3.8°C**, is 7.54° lower than the mean. (2σ = 6.4°)
+* Leuchars' wind speed on `02/06/2015`, **22kn**, is 11.17kn higher than the mean. (2σ = 10.1kn)
+* Leuchars' temperature on `01/05/2015`, **3.8°C**, is 7.54° lower than the mean. (2σ = 6.4°)
 
 As all of my sampled locations have an anomalous result on the 2nd of June, **I will remove this date** from my set of results.
-<br />I will also exclude the temperature outlier for Leauchars from the box plot's lower bound, instead plotting it as an outlier.
+<br />I will also exclude the temperature outlier for Leuchars from the box plot's lower bound, instead plotting it as an outlier.
 
 ## Representation
 ### Box Plots
