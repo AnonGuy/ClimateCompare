@@ -66,3 +66,4 @@ As all of my sampled locations have an anomalous result on the 2nd of June, **I 
 ### Histograms
 
 ![temperature_cambourne](https://raw.githubusercontent.com/AnonGuy/ClimateCompare/master/images/histogram/cambourne/temperature.png)
+![windspeed_cambourne](https://raw.githubusercontent.com/AnonGuy/ClimateCompare/master/images/histogram/cambourne/windspeed.png)
