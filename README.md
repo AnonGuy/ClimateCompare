@@ -30,7 +30,7 @@ The sampled data for [Cambourne](https://raw.githubusercontent.com/AnonGuy/Clima
 provided in this repository.
 
 ## Data Analysis
-I have written several Python scripts, included in this repository, to calculate the mean, median, standard deviation of all samples that I have collected. The results can be seen below:
+I have written several Python scripts, included in this repository, to calculate the mean, median and standard deviation of all samples that I have collected. The results can be seen below:
 
 |                                   | Cambourne | Heathrow | Leuchars |
 |:---------------------------------:|:---------:|:--------:|:--------:|
@@ -53,9 +53,16 @@ Using this information, I have discovered the following outliers:
 * Leuchars' temperature on `01/05/2015`, **3.8°C**, is 7.54° lower than the mean. (2σ = 6.4°)
 
 As all of my sampled locations have an anomalous result on the 2nd of June, **I will remove this date** from my set of results.
-<br />I will also exclude the temperature outlier for Leuchars from the box plot's lower bound, instead plotting it as an outlier.
+<br />I will also exclude the temperature outlier for Leuchars from the box plot's lower bound.
 
 ## Representation
 ### Box Plots
+[Source code](https://raw.githubusercontent.com/AnonGuy/ClimateCompare/master/plot_scripts/box_plot.py)
+
+
 ![temperature](https://raw.githubusercontent.com/AnonGuy/ClimateCompare/master/images/box_plot/temperature.png)
 ![windspeed](https://raw.githubusercontent.com/AnonGuy/ClimateCompare/master/images/box_plot/windspeed.png)
+
+### Histograms
+
+![temperature_cambourne](https://raw.githubusercontent.com/AnonGuy/ClimateCompare/master/images/histogram/cambourne/temperature.png)
