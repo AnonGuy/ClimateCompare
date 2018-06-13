@@ -13,7 +13,6 @@ def format_values(towns, town, index, intervals):
     ]
     std = numpy.std(values)
     mean = numpy.mean(values)
-
     for datum in towns[town]:
         if abs(mean - datum[index]) <= std * 2:
             for (low, high), value in intervals.items():
@@ -131,28 +130,28 @@ def plot(towns):
     ax.set_xlabel('Daily Mean Windspeed (kn)')
     ax.set_title('Heathrow')
     intervals = {
-        (9, 10): 1,
-        (10, 11): 2,
-        (11, 12): 3,
-        (12, 13): 4,
-        (13, 14): 5,
-        (14, 15): 6,
-        (15, 16): 7,
-        (16, 17): 8,
-        (17, 18): 9,
-        (18, 19): 10,
-        (19, 20): 11,
-        (20, 21): 12,
-        (21, 22): 13,
-        (22, 23): 14
+        (4, 5): 1,
+        (5, 6): 2,
+        (6, 7): 3,
+        (7, 8): 4,
+        (8, 9): 5,
+        (9, 10): 6,
+        (10, 11): 7,
+        (11, 12): 8,
+        (12, 13): 9,
+        (13, 14): 10,
+        (14, 15): 11,
+        (15, 16): 12,
+        (16, 17): 13,
+        (17, 18): 14,
+        (18, 19): 15
     }
     standard, outliers = format_values(towns, 'heathrow', 2, intervals)
     n, bins, patches = plt.hist(
         standard, 50, normed=1, facecolor='green', alpha=0.75
     )
-    plt.xticks(range(1, 15), [
-        '9 - 10', '10 - 11', '11 - 12', '12 - 13', '13 - 14', '14 - 15',
-        '15 - 16', '16 - 17', '17 - 18', '18 - 19', '19 - 20', '20 - 21',
-        '21 - 22', '22 - 23'
+    plt.xticks(range(1, 9), [
+        '4 - 5', '5 - 6', '6 - 7', '7 - 8', '8 - 9', '9 - 10', '10 - 11',
+        '11 - 12'
     ], rotation=20, fontsize=8)
     plt.savefig('images/histogram/heathrow/windspeed.png', dpi=300)
