@@ -155,3 +155,61 @@ def plot(towns):
         '11 - 12'
     ], rotation=20, fontsize=8)
     plt.savefig('images/histogram/heathrow/windspeed.png', dpi=300)
+
+    plt.clf()
+    fig, ax = plt.subplots()
+    fig.suptitle(
+        'Daily mean temperature in Leuchars (2015)',
+        fontsize=14, fontweight='bold'
+    )
+    ax.set_ylabel('Frequency')
+    ax.set_xlabel('Daily Mean Temperature (°C)')
+    ax.set_title('Leuchars')
+    intervals = {
+        (9, 10): 1,
+        (10, 11): 2,
+        (11, 12): 3,
+        (12, 13): 4,
+        (13, 14): 5,
+        (14, 15): 6,
+        (15, 16): 7,
+        (16, 17): 8
+    }
+    standard, outliers = format_values(towns, 'leuchars', 1, intervals)
+    n, bins, patches = plt.hist(
+        standard, 50, normed=1, facecolor='green', alpha=0.75
+    )
+    plt.xticks(range(1, 9), [
+        '9 - 10', '10 - 11', '11 - 12', '12 - 13', '13 - 14', '14 - 15',
+        '15 - 16', '16 - 17'
+    ], rotation=20, fontsize=8)
+    plt.savefig('images/histogram/leuchars/temperature.png', dpi=300)
+
+    plt.clf()
+    fig, ax = plt.subplots()
+    fig.suptitle(
+        'Daily mean windspeed in Leuchars (2015)',
+        fontsize=14, fontweight='bold'
+    )
+    ax.set_ylabel('Frequency')
+    ax.set_xlabel('Daily Mean Windspeed (kn)')
+    ax.set_title('Leuchars')
+    intervals = {
+        (9, 10): 1,
+        (10, 11): 2,
+        (11, 12): 3,
+        (12, 13): 4,
+        (13, 14): 5,
+        (14, 15): 6,
+        (15, 16): 7,
+        (16, 17): 8
+    }
+    standard, outliers = format_values(towns, 'leuchars', 1, intervals)
+    n, bins, patches = plt.hist(
+        standard, 50, normed=1, facecolor='green', alpha=0.75
+    )
+    plt.xticks(range(1, 9), [
+        '9 - 10', '10 - 11', '11 - 12', '12 - 13', '13 - 14', '14 - 15',
+        '15 - 16', '16 - 17'
+    ], rotation=20, fontsize=8)
+    plt.savefig('images/histogram/leuchars/windspeed.png', dpi=300)

@@ -70,3 +70,6 @@ As all of my sampled locations have an anomalous result on the 2nd of June, **I 
 
 ![temperature_heathrow](https://raw.githubusercontent.com/AnonGuy/ClimateCompare/master/images/histogram/heathrow/windspeed.png)
 ![windspeed_heathrow](https://raw.githubusercontent.com/AnonGuy/ClimateCompare/master/images/histogram/heathrow/windspeed.png)
+
+![temperature_leuchars](https://raw.githubusercontent.com/AnonGuy/ClimateCompare/master/images/histogram/leuchars/temperature.png)
+![windspeed_leuchars](https://raw.githubusercontent.com/AnonGuy/ClimateCompare/master/images/histogram/leuchars/windspeed.png)
